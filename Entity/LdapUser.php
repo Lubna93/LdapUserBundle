@@ -78,11 +78,8 @@ class LdapUser extends Entity implements UserInterface {
             return;
         }
         // Initialisation des roles
-<<<<<<< HEAD
+
         $this->roles = array('ROLE_VISIT');
-=======
-        $this->roles = array();
->>>>>>> 3303bcb3bfcbd8a23af0e289e23ccf1133067388
 
         // Récupération des groupes de l'utilisateur
         $groups = $this->getMemberOf();
