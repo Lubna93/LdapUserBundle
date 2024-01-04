@@ -1,0 +1,30 @@
+{
+    "name": "l3/ldap-user-bundle",
+    "type": "symfony-bundle",
+    "description": "User Provider from LDAP (branch ou=people)",
+    "homepage": "https://github.com/l3-team/LdapUserBundle",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Pierre Pélisset",
+            "email": "pierre.pelisset@univ-lille3.fr"
+        },
+	{
+            "name": "Mathieu Hétru",
+            "email": "mathieu.hetru@univ-lille.fr"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "symfony/http-foundation": "~7.0",
+        "symfony/security-bundle": "~7.0",
+        "symfony/routing": "~7.0",
+        "symfony/framework-bundle": "~7.0",
+        "openldapobject/ldapobjectbundle": "1.1.5"
+    },
+    "autoload": {
+        "psr-4": { "L3\\Bundle\\LdapUserBundle\\": "" }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
